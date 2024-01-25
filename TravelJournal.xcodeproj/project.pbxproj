@@ -25,6 +25,7 @@
 		1E622E122B61DC08000C679E /* ProfileViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E622E112B61DC08000C679E /* ProfileViewViewModel.swift */; };
 		1E622E142B61DC2D000C679E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E622E132B61DC2D000C679E /* LoginView.swift */; };
 		1E622E162B61DC36000C679E /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E622E152B61DC36000C679E /* RegisterView.swift */; };
+		1E622E182B61E6B1000C679E /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E622E172B61E6B1000C679E /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		1E622E112B61DC08000C679E /* ProfileViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewViewModel.swift; sourceTree = "<group>"; };
 		1E622E132B61DC2D000C679E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		1E622E152B61DC36000C679E /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		1E622E172B61E6B1000C679E /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 				1E622E0B2B61D8ED000C679E /* ProfileView.swift */,
 				1E622E132B61DC2D000C679E /* LoginView.swift */,
 				1E622E152B61DC36000C679E /* RegisterView.swift */,
+				1E622E172B61E6B1000C679E /* HeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E622E0E2B61D984000C679E /* User.swift in Sources */,
+				1E622E182B61E6B1000C679E /* HeaderView.swift in Sources */,
 				1E622E142B61DC2D000C679E /* LoginView.swift in Sources */,
 				1E622DD62B61CA31000C679E /* MainView.swift in Sources */,
 				1E622E0C2B61D8ED000C679E /* ProfileView.swift in Sources */,
