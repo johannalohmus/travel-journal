@@ -8,12 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		1E622DD42B61CA31000C679E /* TravelJournalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E622DD32B61CA31000C679E /* TravelJournalApp.swift */; };
-		1E622DD62B61CA31000C679E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E622DD52B61CA31000C679E /* ContentView.swift */; };
+		1E622DD62B61CA31000C679E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E622DD52B61CA31000C679E /* MainView.swift */; };
 		1E622DD82B61CA32000C679E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E622DD72B61CA32000C679E /* Assets.xcassets */; };
 		1E622DDB2B61CA32000C679E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E622DDA2B61CA32000C679E /* Preview Assets.xcassets */; };
 		1E622DE52B61CA32000C679E /* TravelJournalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E622DE42B61CA32000C679E /* TravelJournalTests.swift */; };
 		1E622DEF2B61CA32000C679E /* TravelJournalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E622DEE2B61CA32000C679E /* TravelJournalUITests.swift */; };
 		1E622DF12B61CA32000C679E /* TravelJournalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E622DF02B61CA32000C679E /* TravelJournalUITestsLaunchTests.swift */; };
+		1E622DFE2B61D475000C679E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1E622DFD2B61D475000C679E /* GoogleService-Info.plist */; };
+		1E622E012B61D589000C679E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 1E622E002B61D589000C679E /* FirebaseAnalytics */; };
+		1E622E032B61D589000C679E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 1E622E022B61D589000C679E /* FirebaseAuth */; };
+		1E622E052B61D589000C679E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 1E622E042B61D589000C679E /* FirebaseFirestore */; };
+		1E622E072B61D589000C679E /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1E622E062B61D589000C679E /* FirebaseFirestoreSwift */; };
+		1E622E0C2B61D8ED000C679E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E622E0B2B61D8ED000C679E /* ProfileView.swift */; };
+		1E622E0E2B61D984000C679E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E622E0D2B61D984000C679E /* User.swift */; };
+		1E622E102B61DBFF000C679E /* MainViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E622E0F2B61DBFF000C679E /* MainViewViewModel.swift */; };
+		1E622E122B61DC08000C679E /* ProfileViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E622E112B61DC08000C679E /* ProfileViewViewModel.swift */; };
+		1E622E142B61DC2D000C679E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E622E132B61DC2D000C679E /* LoginView.swift */; };
+		1E622E162B61DC36000C679E /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E622E152B61DC36000C679E /* RegisterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +47,7 @@
 /* Begin PBXFileReference section */
 		1E622DD02B61CA31000C679E /* TravelJournal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelJournal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E622DD32B61CA31000C679E /* TravelJournalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelJournalApp.swift; sourceTree = "<group>"; };
-		1E622DD52B61CA31000C679E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1E622DD52B61CA31000C679E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		1E622DD72B61CA32000C679E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E622DDA2B61CA32000C679E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1E622DE02B61CA32000C679E /* TravelJournalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelJournalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +55,13 @@
 		1E622DEA2B61CA32000C679E /* TravelJournalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelJournalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E622DEE2B61CA32000C679E /* TravelJournalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelJournalUITests.swift; sourceTree = "<group>"; };
 		1E622DF02B61CA32000C679E /* TravelJournalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelJournalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1E622DFD2B61D475000C679E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1E622E0B2B61D8ED000C679E /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		1E622E0D2B61D984000C679E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		1E622E0F2B61DBFF000C679E /* MainViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewViewModel.swift; sourceTree = "<group>"; };
+		1E622E112B61DC08000C679E /* ProfileViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewViewModel.swift; sourceTree = "<group>"; };
+		1E622E132B61DC2D000C679E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		1E622E152B61DC36000C679E /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +69,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E622E012B61D589000C679E /* FirebaseAnalytics in Frameworks */,
+				1E622E032B61D589000C679E /* FirebaseAuth in Frameworks */,
+				1E622E052B61D589000C679E /* FirebaseFirestore in Frameworks */,
+				1E622E072B61D589000C679E /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,8 +116,11 @@
 		1E622DD22B61CA31000C679E /* TravelJournal */ = {
 			isa = PBXGroup;
 			children = (
+				1E622E0A2B61D76F000C679E /* Models */,
+				1E622E092B61D759000C679E /* ViewModels */,
+				1E622E082B61D755000C679E /* Views */,
+				1E622DFD2B61D475000C679E /* GoogleService-Info.plist */,
 				1E622DD32B61CA31000C679E /* TravelJournalApp.swift */,
-				1E622DD52B61CA31000C679E /* ContentView.swift */,
 				1E622DD72B61CA32000C679E /* Assets.xcassets */,
 				1E622DD92B61CA32000C679E /* Preview Content */,
 			);
@@ -127,6 +152,34 @@
 			path = TravelJournalUITests;
 			sourceTree = "<group>";
 		};
+		1E622E082B61D755000C679E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1E622DD52B61CA31000C679E /* MainView.swift */,
+				1E622E0B2B61D8ED000C679E /* ProfileView.swift */,
+				1E622E132B61DC2D000C679E /* LoginView.swift */,
+				1E622E152B61DC36000C679E /* RegisterView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1E622E092B61D759000C679E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1E622E0F2B61DBFF000C679E /* MainViewViewModel.swift */,
+				1E622E112B61DC08000C679E /* ProfileViewViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		1E622E0A2B61D76F000C679E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1E622E0D2B61D984000C679E /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +196,12 @@
 			dependencies = (
 			);
 			name = TravelJournal;
+			packageProductDependencies = (
+				1E622E002B61D589000C679E /* FirebaseAnalytics */,
+				1E622E022B61D589000C679E /* FirebaseAuth */,
+				1E622E042B61D589000C679E /* FirebaseFirestore */,
+				1E622E062B61D589000C679E /* FirebaseFirestoreSwift */,
+			);
 			productName = TravelJournal;
 			productReference = 1E622DD02B61CA31000C679E /* TravelJournal.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +274,9 @@
 				Base,
 			);
 			mainGroup = 1E622DC72B61CA31000C679E;
+			packageReferences = (
+				1E622DFF2B61D589000C679E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 1E622DD12B61CA31000C679E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +295,7 @@
 			files = (
 				1E622DDB2B61CA32000C679E /* Preview Assets.xcassets in Resources */,
 				1E622DD82B61CA32000C679E /* Assets.xcassets in Resources */,
+				1E622DFE2B61D475000C679E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +320,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E622DD62B61CA31000C679E /* ContentView.swift in Sources */,
+				1E622E0E2B61D984000C679E /* User.swift in Sources */,
+				1E622E142B61DC2D000C679E /* LoginView.swift in Sources */,
+				1E622DD62B61CA31000C679E /* MainView.swift in Sources */,
+				1E622E0C2B61D8ED000C679E /* ProfileView.swift in Sources */,
+				1E622E102B61DBFF000C679E /* MainViewViewModel.swift in Sources */,
+				1E622E162B61DC36000C679E /* RegisterView.swift in Sources */,
 				1E622DD42B61CA31000C679E /* TravelJournalApp.swift in Sources */,
+				1E622E122B61DC08000C679E /* ProfileViewViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,6 +646,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1E622DFF2B61D589000C679E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1E622E002B61D589000C679E /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1E622DFF2B61D589000C679E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		1E622E022B61D589000C679E /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1E622DFF2B61D589000C679E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		1E622E042B61D589000C679E /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1E622DFF2B61D589000C679E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		1E622E062B61D589000C679E /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1E622DFF2B61D589000C679E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1E622DC82B61CA31000C679E /* Project object */;
 }
