@@ -13,9 +13,31 @@ struct MainView: View {
     
     var body: some View {
         if viewModel.isSignedIn, !viewModel.currentUserId.isEmpty {
-            ProfileView() 
+            accountView
         } else {
             LoginView()
+        }
+    }
+    
+    @ViewBuilder
+    var accountView: some View {
+        TabView {
+            MapView(userId: viewModel.currentUserId)
+                .tabItem {
+                    Label("Map", systemImage: "map")
+                }
+            TripView(userId: viewModel.currentUserId)
+                .tabItem {
+                    Label("Trips", systemImage: "list.clipboard")
+                }
+            ExploreView()
+                .tabItem {
+                    Label("Explore", systemImage: "magnifyingglass")
+                }
+            ProfileView()
+                .tabItem {
+                    Label("Profile", systemImage: "person.circle")
+                }
         }
     }
 }

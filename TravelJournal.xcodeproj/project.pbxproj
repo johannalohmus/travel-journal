@@ -30,6 +30,13 @@
 		1E622E1C2B61F9CD000C679E /* LoginViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E622E1B2B61F9CD000C679E /* LoginViewViewModel.swift */; };
 		1E622E1E2B6202D9000C679E /* RegisterViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E622E1D2B6202D9000C679E /* RegisterViewViewModel.swift */; };
 		1E622E202B620BC6000C679E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E622E1F2B620BC6000C679E /* Extensions.swift */; };
+		1E622E222B62D7EB000C679E /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E622E212B62D7EB000C679E /* MapView.swift */; };
+		1E622E242B62D999000C679E /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E622E232B62D999000C679E /* ExploreView.swift */; };
+		1E622E262B62DD0E000C679E /* MapItemViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E622E252B62DD0E000C679E /* MapItemViewViewModel.swift */; };
+		1E622E282B62DD1E000C679E /* MapItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E622E272B62DD1E000C679E /* MapItemView.swift */; };
+		1E622E2A2B62DD97000C679E /* MapViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E622E292B62DD97000C679E /* MapViewViewModel.swift */; };
+		1E622E2C2B62DFB5000C679E /* TripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E622E2B2B62DFB4000C679E /* TripView.swift */; };
+		1E622E2E2B62DFBC000C679E /* TripViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E622E2D2B62DFBC000C679E /* TripViewViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +79,13 @@
 		1E622E1B2B61F9CD000C679E /* LoginViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewViewModel.swift; sourceTree = "<group>"; };
 		1E622E1D2B6202D9000C679E /* RegisterViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewViewModel.swift; sourceTree = "<group>"; };
 		1E622E1F2B620BC6000C679E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		1E622E212B62D7EB000C679E /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		1E622E232B62D999000C679E /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		1E622E252B62DD0E000C679E /* MapItemViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapItemViewViewModel.swift; sourceTree = "<group>"; };
+		1E622E272B62DD1E000C679E /* MapItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapItemView.swift; sourceTree = "<group>"; };
+		1E622E292B62DD97000C679E /* MapViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewViewModel.swift; sourceTree = "<group>"; };
+		1E622E2B2B62DFB4000C679E /* TripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripView.swift; sourceTree = "<group>"; };
+		1E622E2D2B62DFBC000C679E /* TripViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripViewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +186,10 @@
 				1E622E152B61DC36000C679E /* RegisterView.swift */,
 				1E622E172B61E6B1000C679E /* HeaderView.swift */,
 				1E622E192B61F50A000C679E /* TLButton.swift */,
+				1E622E212B62D7EB000C679E /* MapView.swift */,
+				1E622E232B62D999000C679E /* ExploreView.swift */,
+				1E622E272B62DD1E000C679E /* MapItemView.swift */,
+				1E622E2B2B62DFB4000C679E /* TripView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -183,6 +201,9 @@
 				1E622E112B61DC08000C679E /* ProfileViewViewModel.swift */,
 				1E622E1B2B61F9CD000C679E /* LoginViewViewModel.swift */,
 				1E622E1D2B6202D9000C679E /* RegisterViewViewModel.swift */,
+				1E622E252B62DD0E000C679E /* MapItemViewViewModel.swift */,
+				1E622E292B62DD97000C679E /* MapViewViewModel.swift */,
+				1E622E2D2B62DFBC000C679E /* TripViewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -339,13 +360,20 @@
 				1E622E0E2B61D984000C679E /* User.swift in Sources */,
 				1E622E1E2B6202D9000C679E /* RegisterViewViewModel.swift in Sources */,
 				1E622E182B61E6B1000C679E /* HeaderView.swift in Sources */,
+				1E622E2E2B62DFBC000C679E /* TripViewViewModel.swift in Sources */,
+				1E622E242B62D999000C679E /* ExploreView.swift in Sources */,
 				1E622E142B61DC2D000C679E /* LoginView.swift in Sources */,
 				1E622DD62B61CA31000C679E /* MainView.swift in Sources */,
 				1E622E0C2B61D8ED000C679E /* ProfileView.swift in Sources */,
+				1E622E222B62D7EB000C679E /* MapView.swift in Sources */,
+				1E622E262B62DD0E000C679E /* MapItemViewViewModel.swift in Sources */,
 				1E622E102B61DBFF000C679E /* MainViewViewModel.swift in Sources */,
 				1E622E202B620BC6000C679E /* Extensions.swift in Sources */,
+				1E622E2C2B62DFB5000C679E /* TripView.swift in Sources */,
+				1E622E2A2B62DD97000C679E /* MapViewViewModel.swift in Sources */,
 				1E622E162B61DC36000C679E /* RegisterView.swift in Sources */,
 				1E622DD42B61CA31000C679E /* TravelJournalApp.swift in Sources */,
+				1E622E282B62DD1E000C679E /* MapItemView.swift in Sources */,
 				1E622E122B61DC08000C679E /* ProfileViewViewModel.swift in Sources */,
 				1E622E1A2B61F50A000C679E /* TLButton.swift in Sources */,
 			);
