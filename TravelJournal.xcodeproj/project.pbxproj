@@ -26,6 +26,10 @@
 		1E622E142B61DC2D000C679E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E622E132B61DC2D000C679E /* LoginView.swift */; };
 		1E622E162B61DC36000C679E /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E622E152B61DC36000C679E /* RegisterView.swift */; };
 		1E622E182B61E6B1000C679E /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E622E172B61E6B1000C679E /* HeaderView.swift */; };
+		1E622E1A2B61F50A000C679E /* TLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E622E192B61F50A000C679E /* TLButton.swift */; };
+		1E622E1C2B61F9CD000C679E /* LoginViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E622E1B2B61F9CD000C679E /* LoginViewViewModel.swift */; };
+		1E622E1E2B6202D9000C679E /* RegisterViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E622E1D2B6202D9000C679E /* RegisterViewViewModel.swift */; };
+		1E622E202B620BC6000C679E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E622E1F2B620BC6000C679E /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +68,10 @@
 		1E622E132B61DC2D000C679E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		1E622E152B61DC36000C679E /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		1E622E172B61E6B1000C679E /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		1E622E192B61F50A000C679E /* TLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLButton.swift; sourceTree = "<group>"; };
+		1E622E1B2B61F9CD000C679E /* LoginViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewViewModel.swift; sourceTree = "<group>"; };
+		1E622E1D2B6202D9000C679E /* RegisterViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewViewModel.swift; sourceTree = "<group>"; };
+		1E622E1F2B620BC6000C679E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +133,7 @@
 				1E622DD32B61CA31000C679E /* TravelJournalApp.swift */,
 				1E622DD72B61CA32000C679E /* Assets.xcassets */,
 				1E622DD92B61CA32000C679E /* Preview Content */,
+				1E622E1F2B620BC6000C679E /* Extensions.swift */,
 			);
 			path = TravelJournal;
 			sourceTree = "<group>";
@@ -162,6 +171,7 @@
 				1E622E132B61DC2D000C679E /* LoginView.swift */,
 				1E622E152B61DC36000C679E /* RegisterView.swift */,
 				1E622E172B61E6B1000C679E /* HeaderView.swift */,
+				1E622E192B61F50A000C679E /* TLButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -171,6 +181,8 @@
 			children = (
 				1E622E0F2B61DBFF000C679E /* MainViewViewModel.swift */,
 				1E622E112B61DC08000C679E /* ProfileViewViewModel.swift */,
+				1E622E1B2B61F9CD000C679E /* LoginViewViewModel.swift */,
+				1E622E1D2B6202D9000C679E /* RegisterViewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -323,15 +335,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E622E1C2B61F9CD000C679E /* LoginViewViewModel.swift in Sources */,
 				1E622E0E2B61D984000C679E /* User.swift in Sources */,
+				1E622E1E2B6202D9000C679E /* RegisterViewViewModel.swift in Sources */,
 				1E622E182B61E6B1000C679E /* HeaderView.swift in Sources */,
 				1E622E142B61DC2D000C679E /* LoginView.swift in Sources */,
 				1E622DD62B61CA31000C679E /* MainView.swift in Sources */,
 				1E622E0C2B61D8ED000C679E /* ProfileView.swift in Sources */,
 				1E622E102B61DBFF000C679E /* MainViewViewModel.swift in Sources */,
+				1E622E202B620BC6000C679E /* Extensions.swift in Sources */,
 				1E622E162B61DC36000C679E /* RegisterView.swift in Sources */,
 				1E622DD42B61CA31000C679E /* TravelJournalApp.swift in Sources */,
 				1E622E122B61DC08000C679E /* ProfileViewViewModel.swift in Sources */,
+				1E622E1A2B61F50A000C679E /* TLButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

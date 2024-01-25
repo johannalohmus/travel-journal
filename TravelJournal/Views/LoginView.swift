@@ -9,42 +9,43 @@ import SwiftUI
 
 struct LoginView: View {
     
-    @State var email = ""
-    @State var password = ""
+    @StateObject var viewModel = LoginViewViewModel()
     
     var body: some View {
-        VStack {
-            // Header
-            HeaderView()
-            
-            // Login Form
-            Form {
-                TextField("Email Address", text:$email).textFieldStyle(RoundedBorderTextFieldStyle())
-                SecureField("Password", text:$password).textFieldStyle(RoundedBorderTextFieldStyle())
-                Button {
-                    // attempt log in
-                } label:
-                {
-                    ZStack{
-                        RoundedRectangle(cornerRadius: 10)
-                            .foregroundColor(Color.blue)
-                        Text("Log In")
-                            .foregroundColor(Color.white)
-                            .bold()
-                    }
-                }
-                .padding()
-            }
-            
-            // Create account
+        NavigationView {
             VStack {
-                Text("No account?")
-                NavigationLink("Create account", destination: RegisterView().navigationBarBackButtonHidden(true))
+                // Header
+                HeaderView(title: "Log In", subtitle: "Welcome back", angle: 15, background: .pink)
+                
+               
+                // Login Form
+                Form {
+                    if !viewModel.errorMessage.isEmpty {
+                        Text(viewModel.errorMessage)
+                            .foregroundColor(Color.red)
+                    }
+                    
+                    TextField("Email Address", text:$viewModel.email).textFieldStyle(RoundedBorderTextFieldStyle())
+                        .autocapitalization(.none)
+                        .autocorrectionDisabled()
+                    SecureField("Password", text:$viewModel.password).textFieldStyle(RoundedBorderTextFieldStyle())
+                    TLButton(title: "Log In", background: .blue
+                    ) {
+                        viewModel.login()
+                    }
+                    .padding()
+                }
+                
+                // Create account
+                VStack {
+                    Text("No account?")
+                    NavigationLink("Create account", destination: RegisterView().navigationBarBackButtonHidden(true))
+                }
+                
+                .padding(.bottom, 50)
+                
+                Spacer()
             }
-            
-            .padding(.bottom, 50)
-            
-            Spacer()
         }
     }
 }
