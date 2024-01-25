@@ -33,14 +33,13 @@ struct LoginView: View {
                             .bold()
                     }
                 }
+                .padding()
             }
             
             // Create account
             VStack {
                 Text("No account?")
-                Button("Create account") {
-                    // show registration
-                }
+                NavigationLink("Create account", destination: RegisterView().navigationBarBackButtonHidden(true))
             }
             
             .padding(.bottom, 50)
