@@ -25,10 +25,13 @@ struct TripView: View {
             .navigationTitle("Trips")
             .toolbar {
                 Button {
-                    // add trip
+                    viewModel.showingNewTripView = true
                 } label: {
                     Image(systemName: "plus")
                 }
+            }
+            .sheet(isPresented: $viewModel.showingNewTripView) {
+                NewTripView(newTripPresented: $viewModel.showingNewTripView)
             }
         }
     }

@@ -8,5 +8,6 @@
 import Foundation
 
 class TripViewViewModel: ObservableObject {
+    @Published var showingNewTripView = false
     init() {}
 }
