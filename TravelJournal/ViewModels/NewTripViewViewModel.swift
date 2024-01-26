@@ -13,4 +13,10 @@ class NewTripViewViewModel: ObservableObject {
     // description
     // images
     // location
+    
+    init() {}
+    
+    func save() {
+        
+    }
 }
