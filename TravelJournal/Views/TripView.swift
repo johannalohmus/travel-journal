@@ -5,15 +5,19 @@
 //  Created by Johanna Lohmus on 1/25/24.
 //
 
+import FirebaseFirestoreSwift
 import SwiftUI
 
 struct TripView: View {
     @StateObject var viewModel = TripViewViewModel()
+    @FirestoreQuery var trips: [TripItem]
     
     private let userId: String
     
     init(userId: String) {
         self.userId = userId
+        self._trips = FirestoreQuery(
+            collectionPath: "users/\(userId)/trips")
     }
     
     var body: some View {
