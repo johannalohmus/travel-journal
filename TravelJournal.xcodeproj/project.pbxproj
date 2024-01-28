@@ -39,6 +39,7 @@
 		1E622E2E2B62DFBC000C679E /* TripViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E622E2D2B62DFBC000C679E /* TripViewViewModel.swift */; };
 		1E622E302B63E7CB000C679E /* NewTripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E622E2F2B63E7CB000C679E /* NewTripView.swift */; };
 		1E622E322B63E88A000C679E /* NewTripViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E622E312B63E88A000C679E /* NewTripViewViewModel.swift */; };
+		1E622E342B66046B000C679E /* TripItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E622E332B66046B000C679E /* TripItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,7 @@
 		1E622E2D2B62DFBC000C679E /* TripViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripViewViewModel.swift; sourceTree = "<group>"; };
 		1E622E2F2B63E7CB000C679E /* NewTripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTripView.swift; sourceTree = "<group>"; };
 		1E622E312B63E88A000C679E /* NewTripViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTripViewViewModel.swift; sourceTree = "<group>"; };
+		1E622E332B66046B000C679E /* TripItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				1E622E0D2B61D984000C679E /* User.swift */,
+				1E622E332B66046B000C679E /* TripItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 				1E622E222B62D7EB000C679E /* MapView.swift in Sources */,
 				1E622E262B62DD0E000C679E /* MapItemViewViewModel.swift in Sources */,
 				1E622E102B61DBFF000C679E /* MainViewViewModel.swift in Sources */,
+				1E622E342B66046B000C679E /* TripItem.swift in Sources */,
 				1E622E202B620BC6000C679E /* Extensions.swift in Sources */,
 				1E622E2C2B62DFB5000C679E /* TripView.swift in Sources */,
 				1E622E2A2B62DD97000C679E /* MapViewViewModel.swift in Sources */,
