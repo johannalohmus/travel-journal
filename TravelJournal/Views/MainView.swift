@@ -28,7 +28,7 @@ struct MainView: View {
                 }
             TripView(userId: viewModel.currentUserId)
                 .tabItem {
-                    Label("Trips", systemImage: "list.clipboard")
+                    Label("Trips", systemImage: "airplane")
                 }
             ExploreView()
                 .tabItem {
