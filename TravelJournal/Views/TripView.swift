@@ -9,7 +9,7 @@ import FirebaseFirestoreSwift
 import SwiftUI
 
 struct TripView: View {
-    @StateObject var viewModel = TripViewViewModel()
+    @StateObject var viewModel: TripViewViewModel
     @FirestoreQuery var trips: [TripItem]
     
     private let userId: String
@@ -18,12 +18,26 @@ struct TripView: View {
         self.userId = userId
         self._trips = FirestoreQuery(
             collectionPath: "users/\(userId)/trips")
+        self._viewModel = StateObject(wrappedValue:
+                                        TripViewViewModel(userId: userId)
+        )
     }
     
     var body: some View {
         NavigationView {
             VStack
             {
+                List(trips) { item in
+                    TripItemView(item: item)
+                        .swipeActions {
+                            Button {
+                                viewModel.delete(id: item.id)
+                            } label: {
+                                Text("Delete Item")
+                                    .tint(Color.red)
+                            }
+                        }
+                }
                 
             }
             .navigationTitle("Trips")

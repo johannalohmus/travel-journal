@@ -41,6 +41,7 @@
 		1E622E322B63E88A000C679E /* NewTripViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E622E312B63E88A000C679E /* NewTripViewViewModel.swift */; };
 		1E622E342B66046B000C679E /* TripItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E622E332B66046B000C679E /* TripItem.swift */; };
 		1E622E362B69755E000C679E /* TripItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E622E352B69755E000C679E /* TripItemView.swift */; };
+		1E622E382B69A425000C679E /* TripItemViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E622E372B69A425000C679E /* TripItemViewViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,7 @@
 		1E622E312B63E88A000C679E /* NewTripViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTripViewViewModel.swift; sourceTree = "<group>"; };
 		1E622E332B66046B000C679E /* TripItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripItem.swift; sourceTree = "<group>"; };
 		1E622E352B69755E000C679E /* TripItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripItemView.swift; sourceTree = "<group>"; };
+		1E622E372B69A425000C679E /* TripItemViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripItemViewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +217,7 @@
 				1E622E292B62DD97000C679E /* MapViewViewModel.swift */,
 				1E622E2D2B62DFBC000C679E /* TripViewViewModel.swift */,
 				1E622E312B63E88A000C679E /* NewTripViewViewModel.swift */,
+				1E622E372B69A425000C679E /* TripItemViewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -391,6 +394,7 @@
 				1E622E282B62DD1E000C679E /* MapItemView.swift in Sources */,
 				1E622E122B61DC08000C679E /* ProfileViewViewModel.swift in Sources */,
 				1E622E362B69755E000C679E /* TripItemView.swift in Sources */,
+				1E622E382B69A425000C679E /* TripItemViewViewModel.swift in Sources */,
 				1E622E1A2B61F50A000C679E /* TLButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
