@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E0996F52B69D15D003E4164 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 1E0996F42B69D15D003E4164 /* FirebaseAnalytics */; };
+		1E0996F72B69D15D003E4164 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 1E0996F62B69D15D003E4164 /* FirebaseAuth */; };
+		1E0996F92B69D15D003E4164 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 1E0996F82B69D15D003E4164 /* FirebaseDatabase */; };
+		1E0996FB2B69D15D003E4164 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1E0996FA2B69D15D003E4164 /* FirebaseDatabaseSwift */; };
+		1E0996FD2B69D15D003E4164 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 1E0996FC2B69D15D003E4164 /* FirebaseFirestore */; };
+		1E0996FF2B69D15D003E4164 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1E0996FE2B69D15D003E4164 /* FirebaseFirestoreSwift */; };
+		1E57D7012B69D773002EB513 /* MapboxMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 1E57D7002B69D773002EB513 /* MapboxMaps */; };
 		1E622DD42B61CA31000C679E /* TravelJournalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E622DD32B61CA31000C679E /* TravelJournalApp.swift */; };
 		1E622DD62B61CA31000C679E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E622DD52B61CA31000C679E /* MainView.swift */; };
 		1E622DD82B61CA32000C679E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E622DD72B61CA32000C679E /* Assets.xcassets */; };
@@ -15,10 +22,6 @@
 		1E622DEF2B61CA32000C679E /* TravelJournalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E622DEE2B61CA32000C679E /* TravelJournalUITests.swift */; };
 		1E622DF12B61CA32000C679E /* TravelJournalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E622DF02B61CA32000C679E /* TravelJournalUITestsLaunchTests.swift */; };
 		1E622DFE2B61D475000C679E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1E622DFD2B61D475000C679E /* GoogleService-Info.plist */; };
-		1E622E012B61D589000C679E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 1E622E002B61D589000C679E /* FirebaseAnalytics */; };
-		1E622E032B61D589000C679E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 1E622E022B61D589000C679E /* FirebaseAuth */; };
-		1E622E052B61D589000C679E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 1E622E042B61D589000C679E /* FirebaseFirestore */; };
-		1E622E072B61D589000C679E /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1E622E062B61D589000C679E /* FirebaseFirestoreSwift */; };
 		1E622E0C2B61D8ED000C679E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E622E0B2B61D8ED000C679E /* ProfileView.swift */; };
 		1E622E0E2B61D984000C679E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E622E0D2B61D984000C679E /* User.swift */; };
 		1E622E102B61DBFF000C679E /* MainViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E622E0F2B61DBFF000C679E /* MainViewViewModel.swift */; };
@@ -62,6 +65,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E0997002B69D4B7003E4164 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		1E622DD02B61CA31000C679E /* TravelJournal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelJournal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E622DD32B61CA31000C679E /* TravelJournalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelJournalApp.swift; sourceTree = "<group>"; };
 		1E622DD52B61CA31000C679E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -103,10 +107,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E622E012B61D589000C679E /* FirebaseAnalytics in Frameworks */,
-				1E622E032B61D589000C679E /* FirebaseAuth in Frameworks */,
-				1E622E052B61D589000C679E /* FirebaseFirestore in Frameworks */,
-				1E622E072B61D589000C679E /* FirebaseFirestoreSwift in Frameworks */,
+				1E0996FB2B69D15D003E4164 /* FirebaseDatabaseSwift in Frameworks */,
+				1E0996F92B69D15D003E4164 /* FirebaseDatabase in Frameworks */,
+				1E0996F52B69D15D003E4164 /* FirebaseAnalytics in Frameworks */,
+				1E0996FD2B69D15D003E4164 /* FirebaseFirestore in Frameworks */,
+				1E0996F72B69D15D003E4164 /* FirebaseAuth in Frameworks */,
+				1E57D7012B69D773002EB513 /* MapboxMaps in Frameworks */,
+				1E0996FF2B69D15D003E4164 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +157,7 @@
 		1E622DD22B61CA31000C679E /* TravelJournal */ = {
 			isa = PBXGroup;
 			children = (
+				1E0997002B69D4B7003E4164 /* Info.plist */,
 				1E622E0A2B61D76F000C679E /* Models */,
 				1E622E092B61D759000C679E /* ViewModels */,
 				1E622E082B61D755000C679E /* Views */,
@@ -248,10 +256,13 @@
 			);
 			name = TravelJournal;
 			packageProductDependencies = (
-				1E622E002B61D589000C679E /* FirebaseAnalytics */,
-				1E622E022B61D589000C679E /* FirebaseAuth */,
-				1E622E042B61D589000C679E /* FirebaseFirestore */,
-				1E622E062B61D589000C679E /* FirebaseFirestoreSwift */,
+				1E0996F42B69D15D003E4164 /* FirebaseAnalytics */,
+				1E0996F62B69D15D003E4164 /* FirebaseAuth */,
+				1E0996F82B69D15D003E4164 /* FirebaseDatabase */,
+				1E0996FA2B69D15D003E4164 /* FirebaseDatabaseSwift */,
+				1E0996FC2B69D15D003E4164 /* FirebaseFirestore */,
+				1E0996FE2B69D15D003E4164 /* FirebaseFirestoreSwift */,
+				1E57D7002B69D773002EB513 /* MapboxMaps */,
 			);
 			productName = TravelJournal;
 			productReference = 1E622DD02B61CA31000C679E /* TravelJournal.app */;
@@ -326,7 +337,8 @@
 			);
 			mainGroup = 1E622DC72B61CA31000C679E;
 			packageReferences = (
-				1E622DFF2B61D589000C679E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				1E0996F32B69D15D003E4164 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				1E57D6FF2B69D773002EB513 /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */,
 			);
 			productRefGroup = 1E622DD12B61CA31000C679E /* Products */;
 			projectDirPath = "";
@@ -556,6 +568,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"TravelJournal/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TravelJournal/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -584,6 +597,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"TravelJournal/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TravelJournal/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -716,7 +730,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		1E622DFF2B61D589000C679E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+		1E0996F32B69D15D003E4164 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
 			requirement = {
@@ -724,28 +738,51 @@
 				minimumVersion = 10.0.0;
 			};
 		};
+		1E57D6FF2B69D773002EB513 /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mapbox/mapbox-maps-ios.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		1E622E002B61D589000C679E /* FirebaseAnalytics */ = {
+		1E0996F42B69D15D003E4164 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1E622DFF2B61D589000C679E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 1E0996F32B69D15D003E4164 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAnalytics;
 		};
-		1E622E022B61D589000C679E /* FirebaseAuth */ = {
+		1E0996F62B69D15D003E4164 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1E622DFF2B61D589000C679E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 1E0996F32B69D15D003E4164 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
 		};
-		1E622E042B61D589000C679E /* FirebaseFirestore */ = {
+		1E0996F82B69D15D003E4164 /* FirebaseDatabase */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1E622DFF2B61D589000C679E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 1E0996F32B69D15D003E4164 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		1E0996FA2B69D15D003E4164 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1E0996F32B69D15D003E4164 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		1E0996FC2B69D15D003E4164 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1E0996F32B69D15D003E4164 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
 		};
-		1E622E062B61D589000C679E /* FirebaseFirestoreSwift */ = {
+		1E0996FE2B69D15D003E4164 /* FirebaseFirestoreSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1E622DFF2B61D589000C679E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 1E0996F32B69D15D003E4164 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestoreSwift;
+		};
+		1E57D7002B69D773002EB513 /* MapboxMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1E57D6FF2B69D773002EB513 /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */;
+			productName = MapboxMaps;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
