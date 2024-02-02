@@ -10,7 +10,7 @@ import Foundation
 struct TripItem: Codable, Identifiable {
     let id: String
     let title: String
-    let dueDate: TimeInterval
+    let tripDate: TimeInterval
     let createdDate: TimeInterval
     var isDone: Bool
     

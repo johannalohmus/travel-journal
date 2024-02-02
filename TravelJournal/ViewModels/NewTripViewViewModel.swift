@@ -11,7 +11,7 @@ import Foundation
 
 class NewTripViewViewModel: ObservableObject {
     @Published var title = ""
-    @Published var dueDate = Date()
+    @Published var tripDate = Date()
     @Published var showAlert = false
     // description
     // images
@@ -33,7 +33,7 @@ class NewTripViewViewModel: ObservableObject {
         let newId = UUID().uuidString
         let newTrip = TripItem(id: newId,
                                title: title,
-                               dueDate: dueDate.timeIntervalSince1970,
+                               tripDate: tripDate.timeIntervalSince1970,
                                createdDate: Date().timeIntervalSince1970,
                                isDone: false)
         
@@ -52,10 +52,7 @@ class NewTripViewViewModel: ObservableObject {
         guard !title.trimmingCharacters(in: .whitespaces).isEmpty else {
             return false
         }
-        
-        guard dueDate >= Date().addingTimeInterval(-86400) else {
-            return false
-        }
+
         return true
     }
 }
