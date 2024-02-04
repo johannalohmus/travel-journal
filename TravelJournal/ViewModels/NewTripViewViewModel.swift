@@ -11,8 +11,10 @@ import Foundation
 
 class NewTripViewViewModel: ObservableObject {
     @Published var title = ""
+    @Published var subtitle = ""
     @Published var tripDate = Date()
     @Published var showAlert = false
+    @Published var searchText: String = ""
     // description
     // images
     // location
@@ -33,6 +35,7 @@ class NewTripViewViewModel: ObservableObject {
         let newId = UUID().uuidString
         let newTrip = TripItem(id: newId,
                                title: title,
+                               subtitle: subtitle,
                                tripDate: tripDate.timeIntervalSince1970,
                                createdDate: Date().timeIntervalSince1970,
                                isDone: false)

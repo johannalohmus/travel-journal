@@ -22,8 +22,10 @@ struct NewTripView: View {
                 TextField("Title", text: $viewModel.title)
                     .textFieldStyle(DefaultTextFieldStyle())
                 
+                
+                
                 // Due Date (Temp)
-                DatePicker("Due Date", selection: $viewModel.dueDate).datePickerStyle(GraphicalDatePickerStyle())
+                DatePicker("Trip Start Date", selection: $viewModel.tripDate).datePickerStyle(GraphicalDatePickerStyle())
                 
                 // Description
                 

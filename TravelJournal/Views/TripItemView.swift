@@ -16,7 +16,7 @@ struct TripItemView: View {
             VStack (alignment: .leading) {
                 Text(item.title)
                     .font(.subheadline)
-                Text("\(Date(timeIntervalSince1970: item.dueDate).formatted(date: .abbreviated, time: .shortened))")
+                Text("\(Date(timeIntervalSince1970: item.tripDate).formatted(date: .abbreviated, time: .shortened))")
                     .font(.footnote)
                     .foregroundColor(Color(.secondaryLabel))
             }
@@ -37,8 +37,8 @@ struct TripItemView_Previews: PreviewProvider {
     static var previews: some View {
         TripItemView(item: .init(
             id:"123",
-             title: "Get milk",
-             dueDate: Date().timeIntervalSince1970,
+             title: "Greece",
+             tripDate: Date().timeIntervalSince1970,
              createdDate: Date().timeIntervalSince1970,
              isDone: false))
     }

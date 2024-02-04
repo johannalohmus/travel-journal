@@ -10,6 +10,7 @@ import Foundation
 struct TripItem: Codable, Identifiable {
     let id: String
     let title: String
+    let subtitle: String
     let tripDate: TimeInterval
     let createdDate: TimeInterval
     var isDone: Bool
