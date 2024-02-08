@@ -45,6 +45,7 @@
 		1E622E342B66046B000C679E /* TripItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E622E332B66046B000C679E /* TripItem.swift */; };
 		1E622E362B69755E000C679E /* TripItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E622E352B69755E000C679E /* TripItemView.swift */; };
 		1E622E382B69A425000C679E /* TripItemViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E622E372B69A425000C679E /* TripItemViewViewModel.swift */; };
+		1E9B88AA2B755573004E2174 /* GeocodingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9B88A92B755573004E2174 /* GeocodingService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,7 @@
 		1E622E332B66046B000C679E /* TripItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripItem.swift; sourceTree = "<group>"; };
 		1E622E352B69755E000C679E /* TripItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripItemView.swift; sourceTree = "<group>"; };
 		1E622E372B69A425000C679E /* TripItemViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripItemViewViewModel.swift; sourceTree = "<group>"; };
+		1E9B88A92B755573004E2174 /* GeocodingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocodingService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 		1E622DD22B61CA31000C679E /* TravelJournal */ = {
 			isa = PBXGroup;
 			children = (
+				1E9B88A82B75555D004E2174 /* Services */,
 				1E0997002B69D4B7003E4164 /* Info.plist */,
 				1E622E0A2B61D76F000C679E /* Models */,
 				1E622E092B61D759000C679E /* ViewModels */,
@@ -237,6 +240,14 @@
 				1E622E332B66046B000C679E /* TripItem.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		1E9B88A82B75555D004E2174 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1E9B88A92B755573004E2174 /* GeocodingService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -400,6 +411,7 @@
 				1E622E202B620BC6000C679E /* Extensions.swift in Sources */,
 				1E622E2C2B62DFB5000C679E /* TripView.swift in Sources */,
 				1E622E2A2B62DD97000C679E /* MapViewViewModel.swift in Sources */,
+				1E9B88AA2B755573004E2174 /* GeocodingService.swift in Sources */,
 				1E622E302B63E7CB000C679E /* NewTripView.swift in Sources */,
 				1E622E162B61DC36000C679E /* RegisterView.swift in Sources */,
 				1E622DD42B61CA31000C679E /* TravelJournalApp.swift in Sources */,
