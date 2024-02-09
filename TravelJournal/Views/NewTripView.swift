@@ -10,6 +10,7 @@ import SwiftUI
 struct NewTripView: View {
     @StateObject var viewModel = NewTripViewViewModel()
     @Binding var newTripPresented: Bool
+    @State private var searchText = ""
     
     var body: some View {
         VStack {
@@ -30,6 +31,10 @@ struct NewTripView: View {
                 // Description
                 
                 // Location
+
+                NavigationStack {
+                }
+                .searchable(text:$searchText)
                 
                 //Images
                 
