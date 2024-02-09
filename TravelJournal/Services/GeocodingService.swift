@@ -1,4 +1,4 @@
-import MapboxGeocoding
+/*import MapboxGeocoding
 import Combine
 
 class GeocodingService: ObservableObject {
@@ -18,3 +18,4 @@ class GeocodingService: ObservableObject {
         }
     }
 }
+*/

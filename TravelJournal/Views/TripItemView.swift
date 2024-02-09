@@ -38,6 +38,7 @@ struct TripItemView_Previews: PreviewProvider {
         TripItemView(item: .init(
             id:"123",
              title: "Greece",
+            subtitle:"",
              tripDate: Date().timeIntervalSince1970,
              createdDate: Date().timeIntervalSince1970,
              isDone: false))
