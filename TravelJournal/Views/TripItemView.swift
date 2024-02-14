@@ -15,6 +15,8 @@ struct TripItemView: View {
         HStack {
             VStack (alignment: .leading) {
                 Text(item.title)
+                    .font(.title3)
+                Text(item.subtitle)
                     .font(.subheadline)
                 Text("\(Date(timeIntervalSince1970: item.tripDate).formatted(date: .abbreviated, time: .shortened))")
                     .font(.footnote)
