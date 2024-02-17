@@ -5,6 +5,8 @@
 //  Created by Johanna Lohmus on 1/26/24.
 //
 
+import MapboxSearch
+import MapboxSearchUI
 import SwiftUI
 
 struct NewTripView: View {
@@ -31,6 +33,32 @@ struct NewTripView: View {
                 // Description
                 
                 // Location
+                let placeAutocomplete = PlaceAutocomplete(accessToken: mapboxAccessToken)
+                let query = "Starbucks"
+                placeAutocomplete.suggestions(for: query) { result in ... }
+                
+                placeAutocomplete.suggestions(for: query) { result in
+                    switch result {
+                    case .success(let suggestions):
+                        self.processSuggestions(suggestions)
+                            
+                    case .failure(let error):
+                        debugPrint(error)
+                    }
+                }
+                
+                let selectedSuggestion = pickSuggestion(suggestions)
+                placeAutocomplete.select(suggestion: selectedSuggestion) { result in
+                    switch result {
+                    case .success(let suggestionResult):
+                        // process result
+                        self.processSelection(suggestionResult)
+
+                    case .failure(let error):
+                        // process failure
+                        debugPrint(error)
+                    }
+                }
 
                 NavigationStack {
                 }
